@@ -23,9 +23,11 @@ app.set("layout", "layout");  // default layout: layout.ejs
 
 
 // MongoDB Connect
-mongoose.connect("mongodb://127.0.0.1:27017/globetrekker")
-    .then(() => console.log("MongoDB Connected"))
+mongoose
+    .connect("mongodb+srv://dev:<Dev@2005>@globetrekkerdb.hq7sf7f.mongodb.net/?appName=globetrekkerDB")
+    .then(() => console.log("MongoDB Atlas Connected"))
     .catch(err => console.log(err));
+
 
 // Sessions
 app.use(session({
