@@ -1,0 +1,40 @@
+<% layout = 'layout' %>
+
+<section class="section">
+    <div class="container">
+        <h2 class="page-title">User Reviews</h2>
+
+        <!-- Review Form -->
+        <form class="review-form" action="/reviews/add" method="POST">
+            <h3>Leave a Review</h3>
+
+            <input name="name" placeholder="Your Name" required>
+
+            <textarea name="message" placeholder="Your Review" required></textarea>
+
+            <label>Rating</label>
+            <input name="rating" type="number" min="1" max="5" required>
+
+            <button class="btn btn-primary">Submit Review</button>
+        </form>
+
+        <hr class="divider">
+
+        <!-- All Reviews -->
+        <div class="review-list">
+            <% reviews.forEach(r => { %>
+                <div class="review-card">
+                    <h3><%= r.name %> — ⭐ <%= r.rating %>/5</h3>
+                    <p class="review-msg"><%= r.message %></p>
+                    <small class="date">
+                        <%= new Date(r.createdAt).toLocaleString() %>
+                    </small>
+
+                    <a href="/reviews/delete/<%= r._id %>" class="btn btn-outline delete-btn">
+                        Delete
+                    </a>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</section>

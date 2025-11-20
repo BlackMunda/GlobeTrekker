@@ -1,0 +1,7 @@
+{
+  "plans": [
+    { "name": "Silver Plan", "description": "Perfect for occasional travelers.", "price": 19 },
+    { "name": "Gold Plan", "description": "Extra perks and discounts on packages.", "price": 39 },
+    { "name": "Platinum Plan", "description": "Unlimited priority access & VIP support.", "price": 59 }
+  ]
+}

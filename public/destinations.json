@@ -1,0 +1,34 @@
+{
+  "destinations": [
+    {
+      "name": "Taj Mahal, Agra",
+      "image": "images/photo-1564507592333-c60657eea523.jpeg",
+      "desc": "One of the Seven Wonders of the World, symbolizing eternal love."
+    },
+    {
+      "name": "Jaipur, Rajasthan",
+      "image": "images/jal-mahal-jaipur-tour.jpg",
+      "desc": "The Pink City offers royal palaces, forts, and rich Rajasthani culture."
+    },
+    {
+      "name": "Goa",
+      "image": "images/baga-sea-beach.jpg",
+      "desc": "Famous for its sandy beaches, vibrant nightlife, and Portuguese heritage."
+    },
+    {
+      "name": "Kerala",
+      "image": "images/kerela.jpeg",
+      "desc": "Known as 'God’s Own Country', explore serene backwaters and lush greenery."
+    },
+    {
+      "name": "Varanasi",
+      "image": "images/Ahilya_Ghat_by_the_Ganges,_Varanasi.jpg",
+      "desc": "The spiritual heart of India with ancient temples and Ganga Aarti."
+    },
+    {
+      "name": "Darjeeling",
+      "image": "images/Darjeeling-1-1.jpg",
+      "desc": "A hill station famous for tea gardens and Himalayan views."
+    }
+  ]
+}

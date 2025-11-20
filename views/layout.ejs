@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= typeof title !== "undefined" ? title : "GlobeTrekker" %></title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<%- include('partials/header', { active: typeof active !== 'undefined' ? active : '' }) %>
+
+<main>
+    <%- body %>
+</main>
+
+<%- include('partials/footer') %>
+
+<script src="/js/script.js"></script>
+</body>
+</html>

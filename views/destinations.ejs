@@ -1,0 +1,38 @@
+<section class="section">
+    <div class="container">
+        <h2>All Destinations</h2>
+
+        <div style="max-width:700px;margin:16px auto 28px;">
+            <input id="dest-search" type="text" placeholder="Search destinations..." style="width:100%; padding:12px 14px; border-radius:8px; border:1px solid #ccc;">
+        </div>
+
+        <div class="cards" id="dest-cards">
+            <% destinations.forEach(function(d){ %>
+                <div class="card" data-name="<%= d.name.toLowerCase() %>">
+                    <img src="<%= d.image %>" alt="<%= d.name %>">
+                    <h3><%= d.name %></h3>
+                    <p><%= d.desc %></p>
+                    <a class="btn btn-primary" href="/#contact">Book Now</a>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Client-side filter for Destinations page
+    document.addEventListener("DOMContentLoaded", () => {
+        const input = document.getElementById("dest-search");
+        if (!input) return;
+
+        input.addEventListener("input", (e) => {
+            const q = e.target.value.trim().toLowerCase();
+            const cards = document.querySelectorAll("#dest-cards .card");
+            cards.forEach(card => {
+                const name = card.getAttribute("data-name") || "";
+                if (!q || name.includes(q)) card.style.display = "";
+                else card.style.display = "none";
+            });
+        });
+    });
+</script>

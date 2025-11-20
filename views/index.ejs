@@ -1,0 +1,88 @@
+<% layout = 'layout' %>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+    <div class="container">
+        <span class="badge">GlobeTrekker · Your Travel Companion</span>
+        <h1>Explore the world with us</h1>
+        <p>Curated destinations, flexible plans, and dedicated support. Your next unforgettable journey starts here.</p>
+        <div class="stack">
+            <a class="btn btn-primary" href="#packages">Explore Packages</a>
+            <a class="btn btn-outline" href="#about">About Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="section">
+    <div class="container">
+        <h2>About GlobeTrekker</h2>
+        <div class="two-col">
+            <div class="lead">
+                <div class="eyebrow">Who We Are??</div>
+                <h3>Your Trusted Travel Partner</h3>
+                <p>GlobeTrekker is dedicated to crafting memorable experiences with expert guides and customizable travel packages. We believe travel should be accessible, enjoyable, and worry-free.</p>
+                <p>Whether you're exploring hidden gems or iconic landmarks, our team ensures that your journey is smooth from start to finish.</p>
+                <a class="btn btn-primary" href="#contact">Start Your Journey</a>
+            </div>
+            <div class="figure"></div>
+        </div>
+    </div>
+</section>
+
+<!-- TRAVEL PACKAGES (OOP / JS RENDERED) -->
+<section id="packages" class="section">
+    <div class="container">
+        <h2>Exclusive Travel Packages</h2>
+        <p class="muted" style="text-align:center;margin-top:8px">
+            Choose from our curated itineraries for every budget.
+        </p>
+
+        <div class="cards" id="package-cards">
+            <!-- JS / OOP will inject packages here -->
+        </div>
+    </div>
+</section>
+
+<!-- TRAVEL SUBSCRIPTIONS (JSON RENDERED) -->
+<section id="subscriptions" class="section">
+    <div class="container">
+        <h2>Travel Subscriptions</h2>
+        <p class="muted" style="text-align:center;margin-top:8px">
+            Enjoy exclusive benefits and priority bookings with our plans.
+        </p>
+
+        <div class="cards" id="subscription-cards">
+            <!-- subscriptions.json will be fetched and rendered here -->
+        </div>
+    </div>
+</section>
+
+<!-- FEATURED DESTINATIONS (HOME PAGE CARDS) -->
+<section id="featured-destinations" class="section">
+    <div class="container">
+        <h2>Featured Indian Destinations</h2>
+
+        <div class="cards" id="featured-dests">
+            <!-- populated by destinations.json fetch -->
+        </div>
+
+        <div style="text-align:center;margin-top:20px;">
+            <a class="btn btn-outline" href="/destinations">Show More Destinations</a>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p style="text-align:center;color:var(--muted)">
+            We’re here to help you plan your dream trip.
+        </p>
+
+        <div style="text-align:center;margin-top:20px;">
+            <a class="btn btn-outline" href="mailto:info@globetrekker.com">Email Us</a>
+        </div>
+    </div>
+</section>
